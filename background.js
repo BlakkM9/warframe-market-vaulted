@@ -56,9 +56,6 @@ function requestListener(requestDetails) {
     // Ignore orders only requests
     if (!requestDetails.url.endsWith("orders?include=item")) { return; }
 
-    // Check vault status for current item
-    console.log("Completed request: " + requestDetails.url);
-
     browser.tabs.executeScript({ file: "vaulted-tinter.js" });
 }
 

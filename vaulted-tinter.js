@@ -78,10 +78,8 @@ setTimeout(() => {
     // Tint prime part if vaulted otherwise reset color
     let itemName = document.querySelector(".item__name-highlight");
     if (partVaulted) {
-        console.log(itemName);
         itemName.style.color = "#444";
     } else {
-        console.log("part not vaulted!");
         itemName.style.color = "";
     }
 }, 25);
