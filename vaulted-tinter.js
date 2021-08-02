@@ -1,4 +1,5 @@
 setTimeout(() => {
+    // Key is relic id, value is always true
     let UNVAULTED_RELICS = {
         // Lith 
         "lith_t4_relic": true,
