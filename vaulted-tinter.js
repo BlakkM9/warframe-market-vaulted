@@ -75,9 +75,10 @@ setTimeout(() => {
         }
     });
 
-    // Tint prime part if vaulted otherwise reset color
+    // Tint prime part if vaulted otherwise reset color and ignore SET
     let itemName = document.querySelector(".item__name-highlight");
-    if (partVaulted) {
+
+    if (partVaulted && itemName.innerText != (" SET")) {
         itemName.style.color = "#444";
     } else {
         itemName.style.color = "";
