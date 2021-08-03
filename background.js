@@ -1,3 +1,7 @@
+if (typeof browser === "undefined") {
+    var browser = chrome;
+}
+
 function requestListener(requestDetails) {
     // Ignore orders only requests
     if (!requestDetails.url.endsWith("orders?include=item")) { return; }

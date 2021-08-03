@@ -8,6 +8,9 @@
         "webRequest",
         "activeTab",
         "https://warframe.market/*",
+        "https://switch.warframe.market/*",
+        "https://ps4.warframe.market/*",
+        "https://xbox.warframe.market/*",
         "https://api.warframe.market/v1/items/*"
     ],
 
